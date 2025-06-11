@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #001f4d;
+  color: white;
+  padding: 20px;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-info button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.nav-links h4 {
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+.nav-links a {
+  display: block;
+  color: white;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.outline-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.links a {
+  color: blue;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.course-section {
+  margin-top: 20px;
+}
+
+.course-section pre {
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.video-section {
+  margin-top: 20px;
+}

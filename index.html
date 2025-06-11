@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arduino Robot Learning App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="mobileSection">
+        <div class="logo">ArduinoLearn</div>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Navigation (Links + Auth) -->
+      <nav class="nav" id="nav">
+        <div class="nav-links">
+          <a href="/pages/course.html">Courses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="auth-buttons">
+          <a href="#register" class="btn register">
+            <i class="fas fa-user-plus"></i> Register
+          </a>
+          <a href="#signin" class="btn signin">
+            <i class="fas fa-right-to-bracket"></i> Sign In
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero animate__animated animate__fadeIn">
+      <div class="hero-content">
+        <div class="hero-text animate__animated animate__fadeInLeft">
+          <h1>
+            <span class="highlight">Learn Robotics</span> with Hands-On Projects
+            & Real-World Skills
+          </h1>
+          <p>
+            Project-based robotics programming for students, kids, and STEM
+            educators using Arduino kits and simulations.
+          </p>
+          <a
+            href="#"
+            class="btn get-started animate__animated animate__pulse animate__infinite"
+            >Start Learning Free</a
+          >
+        </div>
+        <div class="hero-image animate__animated animate__fadeInRight">
+          <img src="assets/hero-img.jpg" alt="Arduino Robot" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features animate__animated animate__fadeInUp">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img
+            src="assets/features_tut-img.jpeg"
+            alt="Step-by-step tutorials"
+          />
+          <div class="feature-title animate__animated">
+            Step-by-step tutorials
+          </div>
+        </div>
+        <div class="feature-card">
+          <img src="assets/features_visual-img.jpeg" alt="Visual programming" />
+          <div class="feature-title animate__animated">Visual programming</div>
+        </div>
+        <div class="feature-card">
+          <img
+            src="assets/features_kit-img.jpeg"
+            alt="Arduino kit integration"
+          />
+          <div class="feature-title animate__animated">
+            Arduino kit integration
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="assets/features_ai-img.jpeg" alt="AI/ML basics" />
+          <div class="feature-title animate__animated">AI/ML basics</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works animate__animated animate__fadeInUp">
+      <h2>How It Works</h2>
+      <p class="subtitle">
+        Follow these simple steps to start your robotics journey.
+      </p>
+      <div class="howit-grid">
+        <div class="howit-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png"
+            alt="Sign Up"
+            class="howit-icon"
+          />
+          <div class="howit-title">Sign Up</div>
+        </div>
+        <div class="howit-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/29/29302.png"
+            alt="Choose a Course (Book Icon)"
+            class="howit-icon"
+          />
+          <div class="howit-title">Choose a Course</div>
+        </div>
+        <div class="howit-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+            alt="Learn by Doing"
+            class="howit-icon"
+          />
+          <div class="howit-title">Learn by Doing</div>
+        </div>
+        <div class="howit-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+            alt="Get Certified"
+            class="howit-icon"
+          />
+          <div class="howit-title">Get Certified</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section class="courses">
+      <h2>Popular Courses</h2>
+      <p class="subtitle">
+        Our most popular hands-on robotics and coding courses for all levels.
+      </p>
+      <div class="course-grid">
+        <div class="course-card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+            alt="Intro to Arduino"
+          />
+          <div class="course-title">Intro to Arduino - Beginner-friendly</div>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+            alt="Python + Robotics"
+          />
+          <div class="course-title">Python + Robotics - Intermediate</div>
+        </div>
+        <div class="course-card">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Robot Arm"
+          />
+          <div class="course-title">Build Your First Robot Arm - Advanced</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="audience animate">
+      <h2>Who Is This For?</h2>
+      <p class="subtitle">
+        Perfect for kids, teens, schools, and STEM clubs eager to explore
+        robotics and coding.
+      </p>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <img
+            src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80"
+            alt="Kids 8+"
+          />
+          <div class="audience-title">For Kids 8+</div>
+        </div>
+        <div class="audience-card">
+          <img
+            src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80"
+            alt="Teens"
+          />
+          <div class="audience-title">For Teens</div>
+        </div>
+        <div class="audience-card">
+          <img
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+            alt="Schools"
+          />
+          <div class="audience-title">For Schools</div>
+        </div>
+        <div class="audience-card">
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+            alt="STEM Clubs"
+          />
+          <div class="audience-title">For STEM Clubs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="outcomes animate">
+      <h2>What You'll Build</h2>
+      <p class="subtitle">
+        Exciting real-world robotics projects you’ll create as you learn.
+      </p>
+      <div class="outcomes-grid">
+        <!-- Beginner Card -->
+        <div class="outcome-card">
+          <div class="outcome-level beginner">Beginner</div>
+          <div class="outcome-title">Obstacle Avoidance Robot</div>
+          <ul class="outcome-details">
+            <li>
+              <span class="outcome-icon">🛠️</span>Arduino, Ultrasonic, Servo
+            </li>
+            <li><span class="outcome-icon">🎯</span>Avoids obstacles</li>
+            <li><span class="outcome-icon">💡</span>Basic sensors & logic</li>
+          </ul>
+        </div>
+        <!-- Intermediate Card -->
+        <div class="outcome-card">
+          <div class="outcome-level intermediate">Intermediate</div>
+          <div class="outcome-title">Gesture Robot</div>
+          <ul class="outcome-details">
+            <li><span class="outcome-icon">🛠️</span>Arduino, MPU6050, RF</li>
+            <li><span class="outcome-icon">🎯</span>Moves by hand gestures</li>
+            <li><span class="outcome-icon">💡</span>Sensor fusion, mapping</li>
+          </ul>
+        </div>
+        <!-- Advanced Card -->
+        <div class="outcome-card">
+          <div class="outcome-level advanced">Advanced</div>
+          <div class="outcome-title">Voice Assistant Robot</div>
+          <ul class="outcome-details">
+            <li>
+              <span class="outcome-icon">🛠️</span>Raspberry Pi, Speech API
+            </li>
+            <li><span class="outcome-icon">🎯</span>Voice-controlled tasks</li>
+            <li><span class="outcome-icon">💡</span>Speech, APIs, multitask</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+      <h2 class="section-title">What Learners Say</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_1.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Kate Rogers</div>
+              <div class="message mini">
+                “Great support and quick help with my robotics course. Highly
+                recommend!”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_2.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="user-name mini">John Smith</div>
+              <div class="message mini">
+                “The Arduino projects were fun and easy to follow. I learned a
+                lot!”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_3.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Maria Lopez</div>
+              <div class="message mini">
+                “Loved the hands-on approach. The lessons were clear and
+                engaging!”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_4.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Samuel Lee</div>
+              <div class="message mini">
+                “Perfect for beginners. I built my first robot and it was
+                awesome!”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_5.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Priya Patel</div>
+              <div class="message mini">
+                “The projects are fun and the instructions are easy to follow.”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_6.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="user-name mini">Liam O'Connor</div>
+              <div class="message mini">
+                “Great for kids and adults alike. Highly recommended for STEM
+                clubs.”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_7.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Chen Wei</div>
+              <div class="message mini">
+                “I learned so much about robotics. The support team is
+                fantastic!”
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide testimonial-card mini animate__animated animate__fadeInUp"
+          >
+            <img src="assets/reviewer_8.jpg" alt="User" class="user-img mini" />
+            <div class="testimonial-mini-content">
+              <div class="quote-icon mini">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="stars mini">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <div class="user-name mini">Fatima Zahra</div>
+              <div class="message mini">
+                “A wonderful learning experience. I feel confident to build
+                more!”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section
+      id="about"
+      class="about-section animate__animated animate__fadeInUp"
+    >
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/about.jpg" alt="About ArduinoLearn" />
+        </div>
+        <div class="about-content">
+          <h2>About ArduinoLearn</h2>
+          <p class="subtitle">Empowering Future Innovators</p>
+          <p>
+            ArduinoLearn is dedicated to making robotics and coding accessible,
+            fun, and practical for all ages. Our program blends interactive
+            lessons with hands-on projects, ensuring every learner not only
+            understands the theory but also builds real-world skills.
+          </p>
+          <p>
+            Our classes are designed for kids, teens, and educators, using
+            step-by-step guidance and real-life examples. We believe in learning
+            by doing—students create, experiment, and solve problems just like
+            real engineers. Join us to experience a new way of learning that
+            prepares you for tomorrow’s technology!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery-section">
+      <h2 class="gallery-title">Gallery</h2>
+      <p class="gallery-subtitle">
+        Explore some of our student projects and moments.
+      </p>
+
+      <div class="swiper gallerySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide gallery-card">
+            <img src="assets/gallery_robotics_1.jpg" alt="Robotics Project" />
+            <div class="image-caption">Robotics Project</div>
+          </div>
+          <!-- Slide 1 -->
+          <div class="swiper-slide gallery-card">
+            <img src="assets/gallery_robotics_4.jpg" alt="Robotics Project" />
+            <div class="image-caption">IOT/Robotics Project</div>
+          </div>
+          <!-- Slide 1 -->
+          <div class="swiper-slide gallery-card">
+            <img src="assets/gallery_robotics_5.jpg" alt="Robotics Project" />
+            <div class="image-caption">AI and ML/Robotics Project</div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide gallery-card">
+            <img src="assets/gallery_robotics_2.jpg" alt="Coding Session" />
+            <div class="image-caption">Coding Session</div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide gallery-card">
+            <img src="assets/gallery_robotics_3.jpg" alt="AI Showcase" />
+            <div class="image-caption">AI Showcase</div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact animate" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo">ArduinoLearn</div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="copyright">
+            &copy; <span id="year"></span> ArduinoLearn | Privacy & Terms
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
