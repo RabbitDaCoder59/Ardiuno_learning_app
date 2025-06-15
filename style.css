@@ -200,6 +200,9 @@ body {
   padding: 0.5em 0.1em;
   height: 50px;
   width: 155px;
+  outline: none;
+  border: none;
+  font-size: clamp(10px, 7vw, 1rem);
 }
 
 /* Section Styles */
@@ -835,13 +838,17 @@ section {
     flex-direction: column;
     padding: 2rem 1rem;
     text-align: center;
+    justify-content: start;
   }
   .hero-text {
     padding: 1rem 0;
     text-align: center;
   }
   .hero-image {
-    margin-top: 1.5rem;
+    flex: auto;
+  }
+  .how-it-works {
+    padding: 0;
   }
 
   .feature-item,
@@ -897,7 +904,7 @@ section {
     gap: 1rem;
   }
   .howit-card {
-    padding: 1.2rem 0.5rem;
+    width: 350px;
     min-height: 150px;
   }
 }
