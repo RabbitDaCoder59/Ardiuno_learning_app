@@ -1,7 +1,7 @@
 // Example interactivity: form submission and fade-in on scroll
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
-  spaceBetween: 24,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
