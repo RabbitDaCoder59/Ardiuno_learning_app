@@ -62,12 +62,14 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
+  text-align: center;
   gap: 0.5rem;
   height: 40px;
-  width: 120px;
+  width: 125px;
   border-radius: 30px;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 0.85rem;
 }
 
 .register {
@@ -131,6 +133,7 @@ body {
 
   .btn {
     justify-content: flex-start;
+    font-size: 0.65rem;
   }
 
   .hamburger {
@@ -190,11 +193,13 @@ body {
 .get-started {
   background: #0d47a1;
   color: white;
-  padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
   margin-top: 1rem;
+  padding: 0.5em 0.1em;
+  height: 50px;
+  width: 155px;
 }
 
 /* Section Styles */

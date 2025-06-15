@@ -3,27 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Page</title>
+    <title>Course | Arduino Robot Learning App</title>
     <link rel="stylesheet" href="/styles/courses.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <h1>Arduino Robot Learning App</h1>
+    </header>
+
+    <!-- Page Container -->
     <div class="container">
-      <aside class="sidebar">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">
+          <i class="fas fa-angle-left" id="toggleIcon"></i>
+        </button>
+
         <div class="user-info">
           <p>Welcome: <strong>Nanmin Fadip</strong></p>
           <button onclick="logout()">LOGOUT</button>
         </div>
+
         <nav class="nav-links">
           <h4>Click here to access the lessons!</h4>
-          <a href="#">Week 1</a>
-          <a href="#">Week 2</a>
-          <a href="#">Week 3 and 4</a>
-          <a href="#">Week 5 and 6</a>
-          <a href="#">Week 7 and 8</a>
-          <a href="#">Take Assessment for Week 5 & 6</a>
+          <a href="#"><i class="fas fa-book-open"></i> <span>Week 1</span></a>
+          <a href="#"><i class="fas fa-book-open"></i> <span>Week 2</span></a>
+          <a href="#"
+            ><i class="fas fa-book-open"></i> <span>Week 3 and 4</span></a
+          >
+          <a href="#"
+            ><i class="fas fa-book-open"></i> <span>Week 5 and 6</span></a
+          >
+          <a href="#"
+            ><i class="fas fa-book-open"></i> <span>Week 7 and 8</span></a
+          >
+          <a href="#"
+            ><i class="fas fa-clipboard-check"></i> <span>Assessment</span></a
+          >
         </nav>
       </aside>
 
+      <!-- Main Content -->
       <main class="main-content">
         <button class="outline-btn">Course Outline for Week 5 and 6</button>
         <div class="links">
@@ -32,31 +58,57 @@
         </div>
 
         <section class="course-section">
-          <h2>1. Introduction to conditionals</h2>
+          <h2>1. Introduction to Conditionals in Arduino</h2>
+          
           <p>
-            <strong>CONDITIONALS (OR SELECTION):</strong><br />
-            Selection statements (sometimes called conditional statements) are
-            code that is executed only when a certain condition is satisfied.
+            <strong>What are Conditionals?</strong><br />
+            In programming, <em>conditionals</em> let your program make decisions. This means it can do different things based on different inputs. Think of it like: “If it’s raining, use an umbrella.”
           </p>
-          <pre>
-if (someCondition) {
-  // do stuff if the condition is true
-}
-
-if (someCondition) {
-  // do stuff if the condition is true
-} else {
-  // do other stuff
-}
-        </pre
-          >
+        
+          <p>
+            <strong>In Arduino, conditionals help you respond to real-world inputs.</strong><br />
+            For example, “If the light level is low, turn on the LED.” Without conditionals, your Arduino sketch would not be interactive.
+          </p>
+        
+          <h3>🧠 Example: Light Sensor Decision</h3>
+          <p>
+            Let's say you want to turn on an LED if it's dark:
+          </p>
+        
+          <pre><code>
+        // Read the light sensor value
+        int lightValue = analogRead(A0);
+        
+        if (lightValue < 300) {
+          digitalWrite(LED_BUILTIN, HIGH); // turn on LED
+        } else {
+          digitalWrite(LED_BUILTIN, LOW);  // turn off LED
+        }
+          </code></pre>
+        
+          <p>
+            In the code above:
+            <ul>
+              <li><code>analogRead(A0)</code> reads the value from the light sensor</li>
+              <li>If the light is below 300 (dark), the LED is turned on</li>
+              <li>Otherwise, it's turned off</li>
+            </ul>
+          </p>
+        
+          <h3>📹 Watch: Using Conditionals in Real Arduino Projects</h3>
           <div class="video-section">
-            <video width="320" height="240" controls>
-              <source src="LightSensor.mp4" type="video/mp4" />
+            <video width="100%" height="320" controls>
+              <source src="https://www.youtube.com/watch?v=x45Fwd0VQjU&pp=ygULTGlnaHRTZW5zb3LSBwkJ3gkBhyohjO8%3D" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
+        
+          <h3>✅ Practice Task:</h3>
+          <p>
+            Modify the code to make the LED blink when it’s dark, instead of staying on.
+          </p>
         </section>
+        
       </main>
     </div>
 
